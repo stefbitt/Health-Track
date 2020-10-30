@@ -1,0 +1,239 @@
+                @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+                .navbar {
+                    background-color: #A9EFE3;
+                    border-bottom: teal solid 1px;
+                }
+                
+                .navbar-brand {
+                    color: #03989e;
+                    font-family: UberMove, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+                    font-weight: bold;
+                }
+                
+                #btn-search {
+                    background-color: #A9EFE3;
+                    border-color: #A9EFE3;
+                }
+                
+                #btn-search:hover {
+                    background-color: #03989e;
+                }
+                
+                #sidebarCollapse ion-icon {
+                    color: #03989e;
+                }
+                
+                .wrapper {
+                    display: flex;
+                    align-items: stretch;
+                }
+                
+                .wrapper {
+                    display: flex;
+                    width: 100%;
+                    align-items: stretch;
+                }
+                
+                #sidebar {
+                    min-width: 250px;
+                    max-width: 250px;
+                    min-height: 100vh;
+                }
+                
+                #sidebar.active {
+                    margin-left: -250px;
+                }
+                
+                a[data-toggle="collapse"] {
+                    position: relative;
+                }
+                
+                .dropdown-toggle::after {
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    transform: translateY(-50%);
+                }
+                
+                @media (max-width: 700px) {
+                    #sidebar {
+                        min-width: 100vw;
+                        max-width: 100vw;
+                        min-height: 3vh;
+                        margin-left: -100vw;
+                        display: flex;
+                    }
+                    #sidebar.active {
+                        margin-left: 0px;
+                    }
+                    .components p {
+                        display: none;
+                    }
+                    .text-colapse {
+                        display: none;
+                    }
+                    .components {
+                        display: flex;
+                    }
+                    .input-group {
+                        display: none;
+                    }
+                }
+                
+                @media (max-width: 1000px) and (min-width: 701px) {
+                    #sidebar {
+                        min-width: 100px;
+                        max-width: 100px;
+                        min-height: 100vh;
+                        margin-left: -100px;
+                    }
+                    #sidebar.active {
+                        margin-left: 0px;
+                    }
+                    .components p {
+                        display: none;
+                    }
+                    .text-colapse {
+                        display: none;
+                    }
+                }
+                
+                body {
+                    font-family: "Poppins", sans-serif;
+                    background: #fafafa;
+                }
+                
+                p {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1.1em;
+                    font-weight: 300;
+                    line-height: 1.7em;
+                    color: #03989e;
+                }
+                
+                a,
+                a:hover,
+                a:focus {
+                    color: inherit;
+                    text-decoration: none;
+                    transition: all 0.3s;
+                }
+                
+                #sidebar {
+                    /* don't forget to add all the previously mentioned styles here too */
+                    background-color: #A9EFE3;
+                    color: #03989e;
+                    transition: all 0.3s;
+                }
+                
+                #sidebar .sidebar-header {
+                    padding: 20px;
+                    background-color: #A9EFE3;
+                }
+                
+                #sidebar ul.components {
+                    padding: 20px 0;
+                    background-color: #A9EFE3;
+                }
+                
+                #sidebar ul p {
+                    color: #03989e;
+                    padding: 10px;
+                }
+                
+                #sidebar ul li a {
+                    padding: 10px;
+                    font-size: 1.1em;
+                    display: block;
+                }
+                
+                #sidebar ul li a:hover {
+                    background: #fff;
+                }
+                
+                #sidebar ul li.active>a,
+                a[aria-expanded="true"] {
+                    color: #03989e;
+                    background-color: #A9EFE3;
+                }
+                
+                ul ul a {
+                    font-size: 0.9em !important;
+                    padding-left: 30px !important;
+                    background: rgb(251, 168, 155);
+                    background: linear-gradient(0deg, rgba(251, 168, 155, 1) 20%, rgba(255, 87, 87, 1) 80%);
+                }
+                
+                #dropdownMenuButton {
+                    background-color: transparent;
+                    border: transparent;
+                }
+                
+                #dropdownMenuButton .svg-inline--fa {
+                    margin-right: 20px;
+                }
+                
+                .card-columns {
+                    @include media-breakpoint-only(lg) {
+                        column-count: 4;
+                    }
+                }
+                
+                label {
+                    font-family: UberMove, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+                    color: #046381;
+                }
+                
+                .form-group input {
+                    border-radius: 30px;
+                }
+                
+                .form-group {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                }
+                
+                .button-imc {
+                    padding-top: 50px;
+                }
+                
+                .buttom-seguinte {
+                    border-radius: 50px;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    border: transparent;
+                    background-color: #046381;
+                    /* ======texto============= */
+                    color: #F7F9DE;
+                    font-family: UberMove, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+                    font-weight: bold;
+                }
+                
+                .buttom-seguinte:hover {
+                    background-color: rgb(71, 181, 181);
+                }
+                
+                .calculo-imc {
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 5vh;
+                    padding-top: 10vh;
+                }
+                
+                .card-group {
+                    padding-top: 50px;
+                    padding-right: 50px;
+                }
+                
+                @media (max-width: 1040px) {
+                    .buttom-seguinte {
+                        margin-bottom: 10px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                    }
+                }
