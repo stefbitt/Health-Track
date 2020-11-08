@@ -1,6 +1,11 @@
 body {
-    background-color: #A9EFE3;
+    background-color: #fff;
     background-repeat: no-repeat;
+}
+
+.modal-header{
+    background-color: #2b699a;
+    border: 0;
 }
 
 .image-login {
@@ -9,8 +14,8 @@ body {
 }
 
 .img-fluid {
-    width: 600px;
-    height: 500px;
+    width: 940px;
+    height: 285px;
 }
 
 @media screen and (min-width: 200px) and (max-width: 600px) {
@@ -26,33 +31,32 @@ body {
     display: flex;
     justify-content: center;
     /* z-index: 4; */
+   
 }
 
 .sign-up a {
-    background-color: #03989E;
-    border: #03989E 2px solid;
-    border-bottom-left-radius: 9999px;
-    border-bottom-right-radius: 9999px;
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    background-color: #2b699a;
+    border: #2b699a 2px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 42px 10px 42px;
     box-sizing: border-box;
     /* =======Texto============== */
     color: #F7F9DE;
     font-weight: bold;
     text-decoration: none;
-    font-size: 1.5em;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-family: UberMove, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .sign-up a:hover {
-    border: #03989E solid 2px;
+    border: #2b699a solid 2px;
     background-color: transparent;
     box-sizing: border-box;
     /* ======texto============= */
-    color: #03989E;
+    color: #2b699a;
 }
 
 .sign-in {
@@ -64,25 +68,23 @@ body {
 }
 
 .sign-in a {
-    border: #03989E solid 2px;
-    border-bottom-left-radius: 9999px;
-    border-bottom-right-radius: 9999px;
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
-    padding: 10px;
-    padding-left: 69.5px;
-    padding-right: 69.5px;
+    border: #2b699a solid 2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 65px 10px 65px;
     box-sizing: border-box;
     /* =======Texto============== */
-    color: #03989E;
+    color: #2b699a;
     font-weight: bold;
     text-decoration: none;
-    font-size: 1.5em;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-family: UberMove, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .sign-in a:hover {
-    background-color: #03989E;
+    background-color: #2b699a;
     box-sizing: border-box;
     /* ======texto============= */
     color: #ffffff;
@@ -96,57 +98,68 @@ body {
 }
 
 .modal-content {
-    background: rgb(71, 181, 181);
-    background: linear-gradient(0deg, rgba(71, 181, 181, 1) 38%, rgba(169, 239, 227, 1) 76%);
+    background: #fff;
+    border: #000;
 }
 
 .modal-title {
-    color: #046381;
+    color: #fff;
     font-family: UberMove, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.close {
-    color: #046381;
-}
-
 .titulo img {
-    width: 250px;
-    height: 100px;
+    width: 159px;
+    height: 44px;
 }
 
 .form-group {
     font-family: UberMove, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
     color: #2b2d42;
+    padding-left: 0;
 }
 
-.form-group input {
-    border-radius: 30px;
+.form-group input, .form-group select {
+    border-radius: 10px;
 }
+
 
 .modal-footer button {
-    border-radius: 50px;
+    border-radius: 10px;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
     border: transparent;
-    background-color: #F7F9DE;
+    background-color: #2b699a;
     /* ======texto============= */
-    color: #046381;
+    color: #fff;
     font-family: UberMove, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
     font-weight: bold;
 }
 
 #Botao-dash {
-    border-radius: 50px;
+    border-radius: 10px;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
     border: transparent;
-    background-color: #F7F9DE;
+    background-color: rgb(92, 92, 92);
     /* ======texto============= */
-    color: #046381;
+    color: #fff;
+    font-family: UberMove, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+}
+#Botao-dash-forgot {
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: transparent;
+    background-color: #2b699a;
+    /* ======texto============= */
+    color: #fff;
     font-family: UberMove, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
     font-weight: bold;
 }

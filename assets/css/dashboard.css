@@ -1,30 +1,28 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 .navbar {
-    background-color: #A9EFE3;
-    border-bottom: teal solid 1px;
+    background-color: #111111;
 }
 
 .navbar-brand {
-    color: #03989e;
+    color: #fff;
     font-family: UberMove, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: bold;
-}
+    font-weight: normal}
 
 .main-div {
     display: flex;
 }
 
 #sidebarCollapse ion-icon {
-    color: #03989e;
+    color: #fff;/*Mexendo aqui*/
 }
 
 #btn-search {
-    background-color: #A9EFE3;
-    border-color: #A9EFE3;
+    background-color: #2b699a;
+    border-color: #2b699a;
 }
 
 #btn-search:hover {
-    background-color: #03989e;
+    background-color: #367bb0;
 }
 
 .wrapper {
@@ -108,6 +106,24 @@ body {
     background: #fafafa;
 }
 
+.footer {
+    background-color: #111111;
+    padding: 15px 0 5px;
+}
+
+.logos-footer {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.text-footer {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: UberMove, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+}
+
 p {
     font-family: "Poppins", sans-serif;
     font-size: 1.1em;
@@ -126,23 +142,23 @@ a:focus {
 
 #sidebar {
     /* don't forget to add all the previously mentioned styles here too */
-    background-color: #A9EFE3;
-    color: #03989e;
+    background-color: #f1f1f1;
+    color: #000;
     transition: all 0.3s;
 }
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background-color: #A9EFE3;
+    background-color: #f1f1f1;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    background-color: #A9EFE3;
+    background-color: #f1f1f1;
 }
 
 #sidebar ul p {
-    color: #03989e;
+    color: #000;
     padding: 10px;
 }
 
@@ -153,20 +169,19 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    background: #fff;
+    background: #e1e1e1;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #03989e;
-    background-color: #A9EFE3;
+    color: #000;
+    background-color: #e1e1e1;
 }
 
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: rgb(251, 168, 155);
-    background: linear-gradient(0deg, rgba(251, 168, 155, 1) 20%, rgba(255, 87, 87, 1) 80%);
+    background: #f1f1f1;
 }
 
 #dropdownMenuButton {
@@ -195,8 +210,7 @@ ul ul a {
 
 .card {
     height: 45vh;
-    background: rgb(251, 168, 155);
-    background: linear-gradient(0deg, rgba(251, 168, 155, 1) 20%, rgba(255, 87, 87, 1) 80%);
+    background: #f1f1f1;
 }
 
 .content-main {

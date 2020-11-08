@@ -1,6 +1,11 @@
+.navbar{
+    height: 45px;
+}
+
 .logo img {
-    width: 180px;
-    height: 70px;
+    width: 159px;
+    height: 44px;
+    margin-top: -2px;
 }
 
 .logo-responsivo img {
@@ -29,22 +34,21 @@
 }
 
 .navbar {
-    background-color: #A9EFE3 !important;
+    background-color: #111111 !important; /*Estou medxendo aqui*/
 }
 
 .nav-link {
     display: flex;
-    color: #03989e !important;
+    color: #fff !important;
     font-weight: bold;
     font-family: UberMove, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .nav-link:hover {
-    background-color: #F7F9DE !important;
-    border-bottom-left-radius: 30px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
+    color: #8ac8f9 !important;
+
 }
 
 .icons {
@@ -111,15 +115,15 @@
 }
 
 .sign-in {
-    background-color: #FF5757;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom-left-radius: 30px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
+    background-color: #2b699a;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
@@ -137,23 +141,20 @@
 }
 
 .card-complete {
-    background-color: #A9EFE3;
+    background-color: #f1f1f1; /*Estou mexendo aqui*/
     padding: 5%;
     display: flex;
     align-items: center;
 }
 
 .card {
-    padding-top: 2vh;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    background-color: #FF5757;
+    background-color: #2b699a;
     height: 20vh;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .card-body {
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,22 +240,23 @@
 .form-message {
     margin-top: 10vh;
     margin-bottom: 10vh;
-    margin-left: 5vh;
+    margin-left: 80px;
 }
 
 .footer {
-    background-color: #A9EFE3;
+    background-color: #111111;
+    padding: 15px 0 5px;
 }
 
 .logos-footer {
     display: flex;
     justify-content: center;
-    color: #03989e;
+    color: #fff;
 }
 
 .text-footer {
     display: flex;
     justify-content: center;
-    color: #03989e;
+    color: #fff;
     font-family: UberMove, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
 }
