@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -14,9 +14,9 @@
 <body>
     <div class="menu-index">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand logo" href="./index.html"><img src="./assets/images/Logo-complete.png"
+            <a class="navbar-brand logo" href="./index.jsp"><img src="./assets/images/Logo-complete.png"
                     alt="Logo"></a>
-            <a class="navbar-brand logo-responsivo" href="./index.html"><img src="./assets/images/logo.png"
+            <a class="navbar-brand logo-responsivo" href="./index.jsp"><img src="./assets/images/logo.png"
                     alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,13 +68,13 @@
     <div class="text-div" id="vamos-comecar">
         <div class="col-md-12 col-sm-12 mb-4">
             <h1 class="title-index">Vamos começar?</h1>
-            <h5 class="text-index">No Health Track você encontrará todo o direcionamento para ter uma vida com saúde e
+            <h5 class="text-index">No Health Track você encontra todo o direcionamento para ter uma vida com saúde e
                 mudar para melhor, através do monitoramento de treinos, meditação, IMC e muito conteúdo exclusivo para
                 transformar sua vida. Pronto para começar? Vamos juntos!
             </h5>
         </div>
         <div class="col-md-12 col-sm-12 sign-in-div">
-            <a href="./login.html" id="download-button" class="sign-in">Entre</a>
+            <a href="./login.jsp" id="download-button" class="sign-in">Entre</a>
         </div>
     </div>
 

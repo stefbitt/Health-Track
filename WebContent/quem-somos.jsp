@@ -8,7 +8,7 @@
     <title>Health Track</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/add.css">
+    <link rel="stylesheet" href="./assets/css/grafico.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
 </head>
 
@@ -16,7 +16,7 @@
     <div class="header">
         <nav class="navbar justify-content-between">
             <div>
-                <a class="navbar-brand" href="./dashboard.html">Health Track</a>
+                <a class="navbar-brand" href="./dashboard.jsp">Health Track</a>
                 <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarCollapse" type="button">
                     <ion-icon name="menu-outline" size="large"></ion-icon>
                 </button>
@@ -40,9 +40,9 @@
                         </button>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"
                             id="dropbtn">
-                            <a class="dropdown-item" href="./configuracao.html">Perfil</a>
+                            <a class="dropdown-item" href="./configuracao.jsp">Perfil</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./index.html">Sair</a>
+                            <a class="dropdown-item" href="./index.jsp">Sair</a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                 <ul class="list-unstyled components">
                     <p>Menu</p>
                     <li class="active">
-                        <a href="add.html">
+                        <a href="add.jsp">
                             <div class="icon">
                                 <ion-icon name="add-outline"></ion-icon>
                             </div>
@@ -78,15 +78,15 @@
                         </a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
                             <li>
-                                <a href="grafico.html">Pressão Arterial</a>
+                                <a href="grafico.jsp">Pressão Arterial</a>
                             </li>
                             <li>
-                                <a href="grafico.html">Batimentos Cardíacos</a>
+                                <a href="grafico.jsp">Batimentos Cardíacos</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="imc.html">
+                        <a href="imc.jsp">
                             <div class="icon">
                                 <ion-icon name="man-outline"></ion-icon>
                             </div>
@@ -94,7 +94,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="aliments.html">
+                        <a href="aliments.jsp">
                             <div class="icon">
                                 <ion-icon name="nutrition-outline"></ion-icon>
                             </div>
@@ -102,7 +102,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="exercicies.html">
+                        <a href="exercicies.jsp">
                             <div class="icon">
                                 <ion-icon name="bicycle-outline"></ion-icon>
                             </div>
@@ -110,7 +110,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="quem-somos.html">
+                        <a href="quem-somos.jsp">
                             <div class="icon">
                                 <ion-icon name="alert-circle-outline"></ion-icon>
                             </div>
@@ -120,86 +120,29 @@
                 </ul>
             </nav>
         </div>
-        <div class="col-xl-9 col-md-9 col-sm-9">
-            <div class="container-fluid">
+        <div style="margin-left: 0;padding-left: 0;" class="col-xl-9 col-md-9 col-sm-9">
+            <div class="row mt-3 mb-1 mt-4">
+                <h3 class="col-md-9">Quem Somos</h3>
+            </div>
+            <div class="row mt-3 mb-2 mt-1">
+                <h6 class="col-md-9">O Health Track é uma ferramenta criada pensando em você e na sua saúde. Criado em
+                    2020 o nosso site e app ajuda a melhorar a administração e visibilidade da sua saúde, para pessoas
+                    que buscam mudarem o seu estilo de vida de uma forma mais saudável, com ajuda de ferramentas
+                    tecnológicas e práticas, que podem agir como facilitadoras no desempenho dos resultados desejados.
+                    <br><br>
+                    O Health Track vem com uma ideia inovadora, podendo registrar em seu aplicativo: altura, peso,
+                    calorias consumidas, pressão arterial, batimentos cardíacos e tempo de atividades físicas. Todas as
+                    funções serão tratadas de forma constante dando feedbacks e visão mais clara ao longo do período de
+                    implementação por você.
+                    <br><br>
+                    Nosso Produto te ajudará através dos recolhimentos de dados por via de formulário detalhado para que
+                    se crie um padrão que melhor se encaixa na vida e objetivo desejado.
+                    <br><br>
 
-                <div class="row mt-3 mb-3">
-                    <h3 class="col-md-9">Fale mais sobre você ...</h3>
-                    <h6 class="col-md-9">Seu gênero cadastrado é <span style="font-weight: 700;">Feminino</span>, e
-                        sua
-                        idade <span style="font-weight: 700;">25 anos</span>.</h6>
-                </div>
-                <form action="" class="mb-5">
-                    <label for="">Cadastre abaixo seu peso e altura:<br><span style="font-size: 12px;">*Esses valores serão utilizados para calcular o seu Índice de Massa Corpórea (IMC).</span></label>
-                    <div class="row mb-3">
-                        <div class="col-md-3">
-                            <label for="exampleFormControlInput1">Altura:</label>
-                            <input type="number" step="any" class="form-control" id="" placeholder="1.58 m">
-                        </div>
-                        <div class="col-md-3">
-                            <label for="exampleFormControlInput1">Peso:</label>
-                            <input type="number" step="any" class="form-control" id="" placeholder="63 kg">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2"><button type="submit" class="buttom-seguinte">Cadastrar</button></div>
-                    </div>
-                    <!-- <div class="row">
-                    <div class="col calculo-imc">
-                        <button type="submit" class="buttom-seguinte">Cadastrar</button>
-                    </div>
-                                            
-                </div>-->
-                </form>
-                <div class="row">
-                    <div class="col-sm-10">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Data</th>
-                                    <th scope="col">Peso</th>
-                                    <th scope="col">Altura</th>
-                                    <th scope="col">Idade</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">17/09/2019</th>
-                                    <td>72,05</td>
-                                    <td>1,70</td>
-                                    <td>25</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">30/09/2019</th>
-                                    <td>73,05</td>
-                                    <td>1,70</td>
-                                    <td>25</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">11/10/2019</th>
-                                    <td>73,20</td>
-                                    <td>1,70</td>
-                                    <td>25</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">17/11/2019</th>
-                                    <td>74,00</td>
-                                    <td>1,70</td>
-                                    <td>24</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">30/12/2019</th>
-                                    <td>79,05</td>
-                                    <td>1,69</td>
-                                    <td>24</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                    Seja bem vindo e boa jornada conosco!</h6>
             </div>
         </div>
+    </div>
     </div>
 
 
@@ -213,7 +156,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script src="./assets/js/imc.js"></script>
+    <script src="./assets/js/grafico.js"></script>
 </body>
 
 </html>

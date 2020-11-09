@@ -8,54 +8,15 @@
     <title>Health Track</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/imc.css">
+    <link rel="stylesheet" href="./assets/css/add.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
-    <script>
-
-        function calcIMC() {
-
-            if( (document.getElementById('peso').value == '') || (document.getElementById('altura').value == '')){
-                alert('Favor inserir peso e altura para realizar o cálculo.');
-                return false;
-            }
-
-            document.getElementById('resultIMC').style = "display:block;";
-
-            var peso = parseFloat(document.getElementById('peso').value);
-            var altura = parseFloat(document.getElementById('altura').value);
-            var imc = peso / (altura * altura);
-
-
-            if (imc < 18.5) {
-                document.getElementById('imcCalculado').innerHTML = imc.toFixed(2);
-                document.getElementById('classificacao').innerHTML = 'abaixo do peso';
-            }
-            else if (imc <= 24.9) {
-                document.getElementById('imcCalculado').innerHTML =  imc.toFixed(2);
-                document.getElementById('classificacao').innerHTML = 'peso normal';
-            }
-            else if (imc <= 29.9) {
-                document.getElementById('imcCalculado').innerHTML =  imc.toFixed(2);
-                document.getElementById('classificacao').innerHTML = 'sobrepeso';
-            }
-            else if (imc <= 39.9) {
-                document.getElementById('imcCalculado').innerHTML =  imc.toFixed(2);
-                document.getElementById('classificacao').innerHTML = 'obesidade';
-            }
-            else {
-                document.getElementById('imcCalculado').innerHTML =  imc.toFixed(2);
-                document.getElementById('classificacao').innerHTML = 'obesidade grave';
-            }
-
-        }
-    </script>
 </head>
 
 <body>
     <div class="header">
         <nav class="navbar justify-content-between">
             <div>
-                <a class="navbar-brand" href="./dashboard.html">Health Track</a>
+                <a class="navbar-brand" href="./dashboard.jsp">Health Track</a>
                 <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarCollapse" type="button">
                     <ion-icon name="menu-outline" size="large"></ion-icon>
                 </button>
@@ -79,9 +40,9 @@
                         </button>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"
                             id="dropbtn">
-                            <a class="dropdown-item" href="./configuracao.html">Perfil</a>
+                            <a class="dropdown-item" href="./configuracao.jsp">Perfil</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./index.html">Sair</a>
+                            <a class="dropdown-item" href="./index.jsp">Sair</a>
                         </div>
                     </div>
                 </div>
@@ -100,7 +61,7 @@
                 <ul class="list-unstyled components">
                     <p>Menu</p>
                     <li class="active">
-                        <a href="add.html">
+                        <a href="add.jsp">
                             <div class="icon">
                                 <ion-icon name="add-outline"></ion-icon>
                             </div>
@@ -117,15 +78,15 @@
                         </a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
                             <li>
-                                <a href="grafico.html">Pressão Arterial</a>
+                                <a href="grafico.jsp">Pressão Arterial</a>
                             </li>
                             <li>
-                                <a href="grafico.html">Batimentos Cardíacos</a>
+                                <a href="grafico.jsp">Batimentos Cardíacos</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="imc.html">
+                        <a href="imc.jsp">
                             <div class="icon">
                                 <ion-icon name="man-outline"></ion-icon>
                             </div>
@@ -133,7 +94,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="aliments.html">
+                        <a href="aliments.jsp">
                             <div class="icon">
                                 <ion-icon name="nutrition-outline"></ion-icon>
                             </div>
@@ -141,7 +102,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="exercicies.html">
+                        <a href="exercicies.jsp">
                             <div class="icon">
                                 <ion-icon name="bicycle-outline"></ion-icon>
                             </div>
@@ -149,7 +110,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="quem-somos.html">
+                        <a href="quem-somos.jsp">
                             <div class="icon">
                                 <ion-icon name="alert-circle-outline"></ion-icon>
                             </div>
@@ -163,30 +124,32 @@
             <div class="container-fluid">
 
                 <div class="row mt-3 mb-3">
-                    <h3 class="col-md-9">Vamos calcular o seu IMC?</h3>
+                    <h3 class="col-md-9">Fale mais sobre você ...</h3>
                     <h6 class="col-md-9">Seu gênero cadastrado é <span style="font-weight: 700;">Feminino</span>, e
                         sua
                         idade <span style="font-weight: 700;">25 anos</span>.</h6>
                 </div>
-                <form action="" class="mb-4">
+                <form action="" class="mb-5">
+                    <label for="">Cadastre abaixo seu peso e altura:<br><span style="font-size: 12px;">*Esses valores serão utilizados para calcular o seu Índice de Massa Corpórea (IMC).</span></label>
                     <div class="row mb-3">
                         <div class="col-md-3">
-                            <label for="altura">Altura:</label>
-                            <input type="number" class="form-control" id="altura" placeholder="1,70 m" step="any">
+                            <label for="exampleFormControlInput1">Altura:</label>
+                            <input type="number" step="any" class="form-control" id="" placeholder="1.58 m">
                         </div>
                         <div class="col-md-3">
-                            <label for="peso">Peso:</label>
-                            <input id="peso" type="number" class="form-control" placeholder="63,0 Kg" step="any">
+                            <label for="exampleFormControlInput1">Peso:</label>
+                            <input type="number" step="any" class="form-control" id="" placeholder="63 kg">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-2 mt-1"><a class="buttom-seguinte" onclick="calcIMC()">Calcular</a></div>
-
+                        <div class="col-md-2"><button type="submit" class="buttom-seguinte">Cadastrar</button></div>
                     </div>
-                    <div class="row mt-4" id="resultIMC" style="display:none;">
-                        <h6 class="col-md-9">Seu IMC é <span style="font-weight: 700;" id="imcCalculado">--</span> e sua
-                            classificação é, <span style="font-weight: 700;" id="classificacao">--</span>.</h6>
+                    <!-- <div class="row">
+                    <div class="col calculo-imc">
+                        <button type="submit" class="buttom-seguinte">Cadastrar</button>
                     </div>
+                                            
+                </div>-->
                 </form>
                 <div class="row">
                     <div class="col-sm-10">
@@ -194,35 +157,41 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Data</th>
-                                    <th scope="col">IMC</th>
-                                    <th scope="col">Classificação</th>
+                                    <th scope="col">Peso</th>
+                                    <th scope="col">Altura</th>
+                                    <th scope="col">Idade</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">17/09/2019</th>
-                                    <td>24,2</td>
-                                    <td>SOBREPESO</td>
+                                    <td>72,05</td>
+                                    <td>1,70</td>
+                                    <td>25</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">30/09/2019</th>
-                                    <td>35,2</td>
-                                    <td>PESO NORMAL</td>
+                                    <td>73,05</td>
+                                    <td>1,70</td>
+                                    <td>25</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">11/10/2019</th>
-                                    <td>25,6</td>
-                                    <td>SOBREPESO</td>
+                                    <td>73,20</td>
+                                    <td>1,70</td>
+                                    <td>25</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">17/11/2019</th>
-                                    <td>25,8</td>
-                                    <td>PESO NORMAL</td>
+                                    <td>74,00</td>
+                                    <td>1,70</td>
+                                    <td>24</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">30/12/2019</th>
-                                    <td>28,0</td>
-                                    <td>SOBREPESO</td>
+                                    <td>79,05</td>
+                                    <td>1,69</td>
+                                    <td>24</td>
                                 </tr>
 
                             </tbody>

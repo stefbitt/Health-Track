@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/login.css">
     <title>Login</title>
 </head>
 
@@ -133,7 +132,7 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <form action="sucesso.html" method="GET">
+                                <form action="sucesso.jsp" method="GET">
                                     <div class="modal-body">
                                         <div class="form-group">
                                             <label for="recipient-name" class="col-form-label">Email:</label>
@@ -149,7 +148,7 @@
                                         <a type="button" class="btn" id="Botao-dash-forgot"
                                             href="#">Esqueceu sua senha?</a>
                                         <a type="button" class="btn" id="Botao-dash"
-                                            href="./dashboard.html">Entrar</a>
+                                            href="dashboard.jsp">Entrar</a>
                                     </div>
                                 </form>
                             </div>

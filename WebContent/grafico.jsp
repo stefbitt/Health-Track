@@ -16,7 +16,7 @@
     <div class="header">
         <nav class="navbar justify-content-between">
             <div>
-                <a class="navbar-brand" href="./dashboard.html">Health Track</a>
+                <a class="navbar-brand" href="./dashboard.jsp">Health Track</a>
                 <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarCollapse" type="button">
                     <ion-icon name="menu-outline" size="large"></ion-icon>
                 </button>
@@ -40,9 +40,9 @@
                         </button>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"
                             id="dropbtn">
-                            <a class="dropdown-item" href="./configuracao.html">Perfil</a>
+                            <a class="dropdown-item" href="./configuracao.jsp">Perfil</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./index.html">Sair</a>
+                            <a class="dropdown-item" href="./index.jsp">Sair</a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                 <ul class="list-unstyled components">
                     <p>Menu</p>
                     <li class="active">
-                        <a href="add.html">
+                        <a href="add.jsp">
                             <div class="icon">
                                 <ion-icon name="add-outline"></ion-icon>
                             </div>
@@ -78,15 +78,15 @@
                         </a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
                             <li>
-                                <a href="grafico.html">Pressão Arterial</a>
+                                <a href="grafico.jsp">Pressão Arterial</a>
                             </li>
                             <li>
-                                <a href="grafico.html">Batimentos Cardíacos</a>
+                                <a href="grafico.jsp">Batimentos Cardíacos</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="imc.html">
+                        <a href="imc.jsp">
                             <div class="icon">
                                 <ion-icon name="man-outline"></ion-icon>
                             </div>
@@ -94,7 +94,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="aliments.html">
+                        <a href="aliments.jsp">
                             <div class="icon">
                                 <ion-icon name="nutrition-outline"></ion-icon>
                             </div>
@@ -102,7 +102,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="exercicies.html">
+                        <a href="exercicies.jsp">
                             <div class="icon">
                                 <ion-icon name="bicycle-outline"></ion-icon>
                             </div>
@@ -110,7 +110,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="quem-somos.html">
+                        <a href="quem-somos.jsp">
                             <div class="icon">
                                 <ion-icon name="alert-circle-outline"></ion-icon>
                             </div>
@@ -121,25 +121,89 @@
             </nav>
         </div>
         <div style="margin-left: 0;padding-left: 0;" class="col-xl-9 col-md-9 col-sm-9">
-            <div class="row mt-3 mb-1 mt-4">
-                <h3 class="col-md-9">Quem Somos</h3>
+            <div class="row mt-3 mb-2 mt-4">
+                <h3 class="col-md-9">Confira os seus resultados</h3>
             </div>
-            <div class="row mt-3 mb-2 mt-1">
-                <h6 class="col-md-9">O Health Track é uma ferramenta criada pensando em você e na sua saúde. Criado em
-                    2020 o nosso site e app ajuda a melhorar a administração e visibilidade da sua saúde, para pessoas
-                    que buscam mudarem o seu estilo de vida de uma forma mais saudável, com ajuda de ferramentas
-                    tecnológicas e práticas, que podem agir como facilitadoras no desempenho dos resultados desejados.
-                    <br><br>
-                    O Health Track vem com uma ideia inovadora, podendo registrar em seu aplicativo: altura, peso,
-                    calorias consumidas, pressão arterial, batimentos cardíacos e tempo de atividades físicas. Todas as
-                    funções serão tratadas de forma constante dando feedbacks e visão mais clara ao longo do período de
-                    implementação por você.
-                    <br><br>
-                    Nosso Produto te ajudará através dos recolhimentos de dados por via de formulário detalhado para que
-                    se crie um padrão que melhor se encaixa na vida e objetivo desejado.
-                    <br><br>
+            <div class="row mt-3 mb-2 mt-4">
+                <h6 class="col-md-9">Pressão Arterial</h6>
+            </div>
+            <div class="row">
+                <div class="col-sm-10">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">SIS-DIA</th>
+                                <th scope="col">Data</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">123-79 mmHG</th>
+                                <td>25/05/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">121-85 mmHG</th>
+                                <td>24/05/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">123-78 mmHG</th>
+                                <td>23/05/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">122-81 mmHG</th>
+                                <td>22/05/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">120-82 mmHG</th>
+                                <td>21/05/2020</td>
+                            </tr>
 
-                    Seja bem vindo e boa jornada conosco!</h6>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row mt-3 mb-2 mt-4">
+                <h6 class="col-md-9">Batimentos Cardíacos</h6>
+            </div>
+            <div class="row">
+                <div class="col-sm-10">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Batimentos Cardiacos</th>
+                                <th scope="col">Data</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">55-99</th>
+                                <td>25/05/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">61-100</th>
+                                <td>24/05/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">69-97</th>
+                                <td>23/05/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">70-98</th>
+                                <td>22/05/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">68-100</th>
+                                <td>21/05/2020</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row mt-4 mb-4">
+                <div class="col-md-4"><a type="" class="buttom-seguinte" onclick="">Desconectar celular</a></div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4"><a style="font-size: 12px;color: #0000FF;text-decoration: underline;" type="">Gerenciar conexões com relógio inteligente.</a></div>
             </div>
         </div>
     </div>

@@ -84,7 +84,7 @@
     <div class="header">
         <nav class="navbar justify-content-between">
             <div>
-                <a class="navbar-brand" href="./dashboard.html">Health Track</a>
+                <a class="navbar-brand" href="./dashboard.jsp">Health Track</a>
                 <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarCollapse" type="button">
                     <ion-icon name="menu-outline" size="large"></ion-icon>
                 </button>
@@ -108,9 +108,9 @@
                         </button>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"
                             id="dropbtn">
-                            <a class="dropdown-item" href="./configuracao.html">Perfil</a>
+                            <a class="dropdown-item" href="./configuracao.jsp">Perfil</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./index.html">Sair</a>
+                            <a class="dropdown-item" href="./index.jsp">Sair</a>
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@
                 <ul class="list-unstyled components">
                     <p>Menu</p>
                     <li class="active">
-                        <a href="add.html">
+                        <a href="add.jsp">
                             <div class="icon">
                                 <ion-icon name="add-outline"></ion-icon>
                             </div>
@@ -146,15 +146,15 @@
                         </a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
                             <li>
-                                <a href="grafico.html">Pressão Arterial</a>
+                                <a href="grafico.jsp">Pressão Arterial</a>
                             </li>
                             <li>
-                                <a href="grafico.html">Batimentos Cardíacos</a>
+                                <a href="grafico.jsp">Batimentos Cardíacos</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="imc.html">
+                        <a href="imc.jsp">
                             <div class="icon">
                                 <ion-icon name="man-outline"></ion-icon>
                             </div>
@@ -162,7 +162,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="aliments.html">
+                        <a href="aliments.jsp">
                             <div class="icon">
                                 <ion-icon name="nutrition-outline"></ion-icon>
                             </div>
@@ -170,7 +170,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="exercicies.html">
+                        <a href="exercicies.jsp">
                             <div class="icon">
                                 <ion-icon name="bicycle-outline"></ion-icon>
                             </div>
@@ -178,7 +178,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="quem-somos.html">
+                        <a href="quem-somos.jsp">
                             <div class="icon">
                                 <ion-icon name="alert-circle-outline"></ion-icon>
                             </div>

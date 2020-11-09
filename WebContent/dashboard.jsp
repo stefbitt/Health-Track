@@ -8,7 +8,7 @@
     <title>Health Track</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/grafico.css">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
 </head>
 
@@ -16,7 +16,7 @@
     <div class="header">
         <nav class="navbar justify-content-between">
             <div>
-                <a class="navbar-brand" href="./dashboard.html">Health Track</a>
+                <a class="navbar-brand" href="./dashboard.jsp">Health Track</a>
                 <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarCollapse" type="button">
                     <ion-icon name="menu-outline" size="large"></ion-icon>
                 </button>
@@ -40,9 +40,9 @@
                         </button>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"
                             id="dropbtn">
-                            <a class="dropdown-item" href="./configuracao.html">Perfil</a>
+                            <a class="dropdown-item" href="./configuracao.jsp">Perfil</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./index.html">Sair</a>
+                            <a class="dropdown-item" href="./index.jsp">Sair</a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                 <ul class="list-unstyled components">
                     <p>Menu</p>
                     <li class="active">
-                        <a href="add.html">
+                        <a href="add.jsp">
                             <div class="icon">
                                 <ion-icon name="add-outline"></ion-icon>
                             </div>
@@ -78,15 +78,15 @@
                         </a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
                             <li>
-                                <a href="grafico.html">Pressão Arterial</a>
+                                <a href="grafico.jsp">Pressão Arterial</a>
                             </li>
                             <li>
-                                <a href="grafico.html">Batimentos Cardíacos</a>
+                                <a href="grafico.jsp">Batimentos Cardíacos</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="imc.html">
+                        <a href="imc.jsp">
                             <div class="icon">
                                 <ion-icon name="man-outline"></ion-icon>
                             </div>
@@ -94,7 +94,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="aliments.html">
+                        <a href="aliments.jsp">
                             <div class="icon">
                                 <ion-icon name="nutrition-outline"></ion-icon>
                             </div>
@@ -102,7 +102,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="exercicies.html">
+                        <a href="exercicies.jsp">
                             <div class="icon">
                                 <ion-icon name="bicycle-outline"></ion-icon>
                             </div>
@@ -110,7 +110,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="quem-somos.html">
+                        <a href="quem-somos.jsp">
                             <div class="icon">
                                 <ion-icon name="alert-circle-outline"></ion-icon>
                             </div>
@@ -121,94 +121,88 @@
             </nav>
         </div>
         <div style="margin-left: 0;padding-left: 0;" class="col-xl-9 col-md-9 col-sm-9">
-            <div class="row mt-3 mb-2 mt-4">
-                <h3 class="col-md-9">Confira os seus resultados</h3>
+            <div class="row mt-3 mb-2">
+                <h1 class="col-md-9">Página inicial</h1>
             </div>
-            <div class="row mt-3 mb-2 mt-4">
-                <h6 class="col-md-9">Pressão Arterial</h6>
-            </div>
-            <div class="row">
-                <div class="col-sm-10">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">SIS-DIA</th>
-                                <th scope="col">Data</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">123-79 mmHG</th>
-                                <td>25/05/2020</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">121-85 mmHG</th>
-                                <td>24/05/2020</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">123-78 mmHG</th>
-                                <td>23/05/2020</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">122-81 mmHG</th>
-                                <td>22/05/2020</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">120-82 mmHG</th>
-                                <td>21/05/2020</td>
-                            </tr>
 
-                        </tbody>
-                    </table>
+            <!--begin cards -->
+            <div id="cards-group" class="row">
+                <div class="col-xl-4 col-md-12 col-sm-12">
+                    <div class="card  mb-3 card01" style="max-width: 18rem;">
+                        <div class="card-body"
+                            style="background-image: url('./assets/images/IMC.png');background-size: 100%;">
+
+                            <!--<div class="image-card"><img src="./assets/images/IMC.png" alt="img-imc"></div>-->
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small stretched-link" href="imc.jsp">
+                                IMC
+                            </a>
+                            <div class="small">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12 col-sm-12">
+                    <div class="card mb-3 card02" style="max-width: 18rem;">
+                        <div class="card-body"
+                            style="background-image: url('./assets/images/aliments.png');background-size: 100%;">
+
+                            <!--<div class="image-card"><img src="./assets/images/aliments.png" alt="img-aliments"></div>-->
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small stretched-link" href="aliments.jsp">
+                                Alimentação
+                            </a>
+                            <div class="small">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12 col-sm-12">
+                    <div class="card mb-3 card03" style="max-width: 18rem;">
+                        <div class="card-body"
+                            style="background-image: url('./assets/images/exercicies.png');background-size: 100%;">
+
+                            <!--<div class="image-card"><img src="./assets/images/exercicies.png" alt="img-exercic"></div>-->
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small stretched-link" href="exercicies.jsp">
+                                Exercícios
+                            </a>
+                            <div class="small">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row mt-3 mb-2 mt-4">
-                <h6 class="col-md-9">Batimentos Cardíacos</h6>
-            </div>
-            <div class="row">
-                <div class="col-sm-10">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">Batimentos Cardiacos</th>
-                                <th scope="col">Data</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">55-99</th>
-                                <td>25/05/2020</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">61-100</th>
-                                <td>24/05/2020</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">69-97</th>
-                                <td>23/05/2020</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">70-98</th>
-                                <td>22/05/2020</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">68-100</th>
-                                <td>21/05/2020</td>
-                            </tr>
+            <!--end cards -->
 
-                        </tbody>
-                    </table>
+            <h3 class="pt-5">Videos Health</h3>
+            <hr>
+
+            <!--start iframe you tube-->
+            <div class="row">
+                <div class="col-xl-6 col-md-12 col-sm-12 align-content-center">
+                    <iframe width="390" height="318" src="https://www.youtube.com/embed/J1lsOrJCW2Y" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class=" col-xl-6 col-md-12 col-sm-12 align-content-center ">
+                    <iframe class="col-xl-10 col-md-10 col-sm-12" width="390" height="318"
+                        src="https://www.youtube.com/embed/fFsRF8zunsg" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="row mt-4 mb-4">
-                <div class="col-md-4"><a type="" class="buttom-seguinte" onclick="">Desconectar celular</a></div>
-                <div class="col-md-2"></div>
-                <div class="col-md-4"><a style="font-size: 12px;color: #0000FF;text-decoration: underline;" type="">Gerenciar conexões com relógio inteligente.</a></div>
-            </div>
+
+            <!--end iframe you tube-->
         </div>
     </div>
-    </div>
-
 
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -220,7 +214,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script src="./assets/js/grafico.js"></script>
+    <script src="./assets/js/dashboard.js"></script>
 </body>
 
 </html>
