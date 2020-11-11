@@ -1,8 +1,8 @@
-package br.com.fiap.tarefa8.dao;
+package br.com.fiap.healthtrack.dao;
 
-import br.com.fiap.tarefa8.exceptions.DatabaseException;
-import br.com.fiap.tarefa8.util.ConnectionFactory;
-import br.com.fiap.tarefa8.vo.ImcVO;
+import br.com.fiap.health.vo.ImcVO;
+import br.com.fiap.healthtrack.exceptions.DatabaseException;
+import br.com.fiap.healthtrack.util.ConnectionFactory;
 
 import java.sql.*;
 import java.util.ArrayList;

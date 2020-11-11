@@ -1,4 +1,4 @@
-package br.com.fiap.tarefa8.util;
+package br.com.fiap.healthtrack.util;
 
 public final class ImcCalcular {
     private ImcCalcular() {

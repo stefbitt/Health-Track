@@ -1,7 +1,9 @@
-package br.com.fiap.tarefa8.exceptions;
+package br.com.fiap.healthtrack.exceptions;
 
 public class DatabaseException extends Exception {
-    public DatabaseException() {
+	private static final long serialVersionUID = 1L;
+
+	public DatabaseException() {
         super();
     }
 

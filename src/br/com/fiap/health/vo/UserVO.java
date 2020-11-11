@@ -1,4 +1,4 @@
-package br.com.fiap.tarefa8.vo;
+package br.com.fiap.health.vo;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

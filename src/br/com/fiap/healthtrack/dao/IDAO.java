@@ -1,8 +1,8 @@
-package br.com.fiap.tarefa8.dao;
-
-import br.com.fiap.tarefa8.exceptions.DatabaseException;
+package br.com.fiap.healthtrack.dao;
 
 import java.util.List;
+
+import br.com.fiap.healthtrack.exceptions.DatabaseException;
 
 public interface IDAO<T> {
 

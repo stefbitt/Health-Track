@@ -194,6 +194,7 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Data</th>
+                                    <th scope="col">Peso</th>
                                     <th scope="col">IMC</th>
                                     <th scope="col">Classificação</th>
                                 </tr>
@@ -201,26 +202,31 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">17/09/2019</th>
+                                    <td>62,2</td>
                                     <td>24,2</td>
                                     <td>SOBREPESO</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">30/09/2019</th>
+                                    <td>70,0</td>
                                     <td>35,2</td>
                                     <td>PESO NORMAL</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">11/10/2019</th>
+                                    <td>85,2</td>
                                     <td>25,6</td>
                                     <td>SOBREPESO</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">17/11/2019</th>
+                                    <td>67,4</td>
                                     <td>25,8</td>
                                     <td>PESO NORMAL</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">30/12/2019</th>
+                                    <td>88,0</td>
                                     <td>28,0</td>
                                     <td>SOBREPESO</td>
                                 </tr>

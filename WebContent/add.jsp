@@ -22,7 +22,7 @@
                 </button>
             </div>
 
-            <form class="form-inline" style="justify-content: flex-end;">
+            <form class="form-inline" style="justify-content: flex-end;" action="#" method="post" >
                 <div class="row">
                     <div class="input-group mb-1 col-md-8 col-sm-5">
                         <input class="form-control" type="text" placeholder="Procurar por..." aria-label="Search">

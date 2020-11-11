@@ -1,9 +1,9 @@
-package br.com.fiap.tarefa8.service;
+package br.com.fiap.healtrack.service;
 
-import br.com.fiap.tarefa8.dao.IDAO;
-import br.com.fiap.tarefa8.dao.UserDAO;
-import br.com.fiap.tarefa8.exceptions.DatabaseException;
-import br.com.fiap.tarefa8.vo.UserVO;
+import br.com.fiap.health.vo.UserVO;
+import br.com.fiap.healthtrack.dao.IDAO;
+import br.com.fiap.healthtrack.dao.UserDAO;
+import br.com.fiap.healthtrack.exceptions.DatabaseException;
 
 import java.util.ArrayList;
 import java.util.List;
