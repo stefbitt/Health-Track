@@ -171,10 +171,10 @@
 							<tbody>
 								<c:forEach var="e" items="${listImc}">
 									<tr>
-										<th scope="row">17/09/2019</th>
-										<td>${e}</td>
-										<td>24,2</td>
-										<td>SOBREPESO</td>
+										<th scope="row">${e.dataCalculo}</th>
+										<td>${e.peso}</td>
+										<td>${e.calculoIMC}</td>
+										<td>${e.classificacao}</td>
 									</tr>
 								</c:forEach>
 							</tbody>
