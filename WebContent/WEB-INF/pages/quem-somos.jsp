@@ -8,7 +8,7 @@
     <title>Health Track</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <link rel="stylesheet" href="./assets/css/grafico.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
 </head>
 
@@ -42,7 +42,7 @@
                             id="dropbtn">
                             <a class="dropdown-item" href="./configuracao.jsp">Perfil</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./index.jsp">Sair</a>
+                            <a class="dropdown-item" href="/">Sair</a>
                         </div>
                     </div>
                 </div>
@@ -121,100 +121,34 @@
             </nav>
         </div>
         <div style="margin-left: 0;padding-left: 0;" class="col-xl-9 col-md-9 col-sm-9">
-            <div class="row mt-3 mb-2">
-                <h1 class="col-md-9">Página inicial</h1>
+            <div class="row mt-3 mb-1 mt-4">
+                <h3 class="col-md-9">Quem Somos</h3>
             </div>
+            <div class="row mt-3 mb-2 mt-1">
+                <h6 class="col-md-9">O Health Track é uma ferramenta criada pensando em você e na sua saúde. Criado em
+                    2020 o nosso site e app ajuda a melhorar a administração e visibilidade da sua saúde, para pessoas
+                    que buscam mudarem o seu estilo de vida de uma forma mais saudável, com ajuda de ferramentas
+                    tecnológicas e práticas, que podem agir como facilitadoras no desempenho dos resultados desejados.
+                    <br><br>
+                    O Health Track vem com uma ideia inovadora, podendo registrar em seu aplicativo: altura, peso,
+                    calorias consumidas, pressão arterial, batimentos cardíacos e tempo de atividades físicas. Todas as
+                    funções serão tratadas de forma constante dando feedbacks e visão mais clara ao longo do período de
+                    implementação por você.
+                    <br><br>
+                    Nosso Produto te ajudará através dos recolhimentos de dados por via de formulário detalhado para que
+                    se crie um padrão que melhor se encaixa na vida e objetivo desejado.
+                    <br><br>
 
-            <!--begin cards -->
-            <div id="cards-group" class="row">
-                <div class="col-xl-4 col-md-12 col-sm-12">
-                    <div class="card  mb-3 card01" style="max-width: 18rem;">
-                        <div class="card-body"
-                            style="background-image: url('./assets/images/IMC.png');background-size: 100%;">
-
-                            <!--<div class="image-card"><img src="./assets/images/IMC.png" alt="img-imc"></div>-->
-                        </div>
-                        <div class="card-footer d-flex align-items-center justify-content-between">
-                            <a class="small stretched-link" href="imc.jsp">
-                                IMC
-                            </a>
-                            <div class="small">
-                                <i class="fas fa-angle-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-12 col-sm-12">
-                    <div class="card mb-3 card02" style="max-width: 18rem;">
-                        <div class="card-body"
-                            style="background-image: url('./assets/images/aliments.png');background-size: 100%;">
-
-                            <!--<div class="image-card"><img src="./assets/images/aliments.png" alt="img-aliments"></div>-->
-                        </div>
-                        <div class="card-footer d-flex align-items-center justify-content-between">
-                            <a class="small stretched-link" href="aliments.jsp">
-                                Alimentação
-                            </a>
-                            <div class="small">
-                                <i class="fas fa-angle-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-12 col-sm-12">
-                    <div class="card mb-3 card03" style="max-width: 18rem;">
-                        <div class="card-body"
-                            style="background-image: url('./assets/images/exercicies.png');background-size: 100%;">
-
-                            <!--<div class="image-card"><img src="./assets/images/exercicies.png" alt="img-exercic"></div>-->
-                        </div>
-                        <div class="card-footer d-flex align-items-center justify-content-between">
-                            <a class="small stretched-link" href="exercicies.jsp">
-                                Exercícios
-                            </a>
-                            <div class="small">
-                                <i class="fas fa-angle-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    Seja bem vindo e boa jornada conosco!</h6>
             </div>
-            <!--end cards -->
-
-            <h3 class="pt-5">Videos Health</h3>
-            <hr>
-
-            <!--start iframe you tube-->
-            <div class="row">
-                <div class="col-xl-6 col-md-12 col-sm-12 align-content-center">
-                    <iframe width="390" height="318" src="https://www.youtube.com/embed/J1lsOrJCW2Y" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-
-                <div class=" col-xl-6 col-md-12 col-sm-12 align-content-center ">
-                    <iframe class="col-xl-10 col-md-10 col-sm-12" width="390" height="318"
-                        src="https://www.youtube.com/embed/fFsRF8zunsg" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <!--end iframe you tube-->
         </div>
     </div>
+    </div>
+
 
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-    <script src="./assets/js/dashboard.js"></script>
+	<jsp:include page="javascript.jsp"></jsp:include>
+    <script src="./assets/js/grafico.js"></script>
 </body>
 
 </html>

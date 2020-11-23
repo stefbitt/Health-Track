@@ -8,7 +8,7 @@
     <title>Health Track</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/add.css">
+    <link rel="stylesheet" href="./assets/css/grafico.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
 </head>
 
@@ -22,7 +22,7 @@
                 </button>
             </div>
 
-            <form class="form-inline" style="justify-content: flex-end;" action="#" method="post" >
+            <form class="form-inline" style="justify-content: flex-end;">
                 <div class="row">
                     <div class="input-group mb-1 col-md-8 col-sm-5">
                         <input class="form-control" type="text" placeholder="Procurar por..." aria-label="Search">
@@ -42,7 +42,7 @@
                             id="dropbtn">
                             <a class="dropdown-item" href="./configuracao.jsp">Perfil</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./index.jsp">Sair</a>
+                            <a class="dropdown-item" href="/">Sair</a>
                         </div>
                     </div>
                 </div>
@@ -120,100 +120,99 @@
                 </ul>
             </nav>
         </div>
-        <div class="col-xl-9 col-md-9 col-sm-9">
-            <div class="container-fluid">
+        <div style="margin-left: 0;padding-left: 0;" class="col-xl-9 col-md-9 col-sm-9">
+            <div class="row mt-3 mb-2 mt-4">
+                <h3 class="col-md-9">Confira os seus resultados</h3>
+            </div>
+            <div class="row mt-3 mb-2 mt-4">
+                <h6 class="col-md-9">Pressão Arterial</h6>
+            </div>
+            <div class="row">
+                <div class="col-sm-10">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">SIS-DIA</th>
+                                <th scope="col">Data</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">123-79 mmHG</th>
+                                <td>25/05/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">121-85 mmHG</th>
+                                <td>24/05/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">123-78 mmHG</th>
+                                <td>23/05/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">122-81 mmHG</th>
+                                <td>22/05/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">120-82 mmHG</th>
+                                <td>21/05/2020</td>
+                            </tr>
 
-                <div class="row mt-3 mb-3">
-                    <h3 class="col-md-9">Fale mais sobre você ...</h3>
-                    <h6 class="col-md-9">Seu gênero cadastrado é <span style="font-weight: 700;">Feminino</span>, e
-                        sua
-                        idade <span style="font-weight: 700;">25 anos</span>.</h6>
-                </div>
-                <form action="" class="mb-5">
-                    <label for="">Cadastre abaixo seu peso e altura:<br><span style="font-size: 12px;">*Esses valores serão utilizados para calcular o seu Índice de Massa Corpórea (IMC).</span></label>
-                    <div class="row mb-3">
-                        <div class="col-md-3">
-                            <label for="exampleFormControlInput1">Altura:</label>
-                            <input type="number" step="any" class="form-control" id="" placeholder="1.58 m">
-                        </div>
-                        <div class="col-md-3">
-                            <label for="exampleFormControlInput1">Peso:</label>
-                            <input type="number" step="any" class="form-control" id="" placeholder="63 kg">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2"><button type="submit" class="buttom-seguinte">Cadastrar</button></div>
-                    </div>
-                    <!-- <div class="row">
-                    <div class="col calculo-imc">
-                        <button type="submit" class="buttom-seguinte">Cadastrar</button>
-                    </div>
-                                            
-                </div>-->
-                </form>
-                <div class="row">
-                    <div class="col-sm-10">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Data</th>
-                                    <th scope="col">Peso</th>
-                                    <th scope="col">Altura</th>
-                                    <th scope="col">Idade</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">17/09/2019</th>
-                                    <td>72,05</td>
-                                    <td>1,70</td>
-                                    <td>25</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">30/09/2019</th>
-                                    <td>73,05</td>
-                                    <td>1,70</td>
-                                    <td>25</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">11/10/2019</th>
-                                    <td>73,20</td>
-                                    <td>1,70</td>
-                                    <td>25</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">17/11/2019</th>
-                                    <td>74,00</td>
-                                    <td>1,70</td>
-                                    <td>24</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">30/12/2019</th>
-                                    <td>79,05</td>
-                                    <td>1,69</td>
-                                    <td>24</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+            <div class="row mt-3 mb-2 mt-4">
+                <h6 class="col-md-9">Batimentos Cardíacos</h6>
+            </div>
+            <div class="row">
+                <div class="col-sm-10">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Batimentos Cardiacos</th>
+                                <th scope="col">Data</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">55-99</th>
+                                <td>25/05/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">61-100</th>
+                                <td>24/05/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">69-97</th>
+                                <td>23/05/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">70-98</th>
+                                <td>22/05/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">68-100</th>
+                                <td>21/05/2020</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row mt-4 mb-4">
+                <div class="col-md-4"><a type="" class="buttom-seguinte" onclick="">Desconectar celular</a></div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4"><a style="font-size: 12px;color: #0000FF;text-decoration: underline;" type="">Gerenciar conexões com relógio inteligente.</a></div>
+            </div>
         </div>
+    </div>
     </div>
 
 
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-    <script src="./assets/js/imc.js"></script>
+	<jsp:include page="javascript.jsp"></jsp:include>
+    <script src="./assets/js/grafico.js"></script>
 </body>
 
 </html>
